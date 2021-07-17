@@ -47,7 +47,10 @@ export default {
       }
     },
     addTask(task) {
+      console.log(this.tasks);
       let tasks = [...this.tasks, task];
+      console.log(tasks);
+
       localStorage.setItem('tasks', JSON.stringify(tasks));
       this.tasks = tasks;
     },
