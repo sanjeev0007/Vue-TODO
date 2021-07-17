@@ -26,7 +26,7 @@ export default {
       tasks: [
         {
           id: 1,
-          text: demo,
+          text: 'demo',
         },
       ],
     };
