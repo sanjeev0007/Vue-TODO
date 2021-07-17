@@ -23,7 +23,12 @@ export default {
   },
   data() {
     return {
-      tasks: [],
+      tasks: [
+        {
+          id: 1,
+          text: demo,
+        },
+      ],
     };
   },
   created() {
