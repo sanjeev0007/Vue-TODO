@@ -40,11 +40,9 @@ export default {
       this.tasks = JSON.parse(localStorage.getItem('tasks'));
     },
     deleteTask(id) {
-      if (confirm('Do you want to delete this task?')) {
-        let tasks = this.tasks.filter((task) => task.id !== id);
-        localStorage.setItem('tasks', JSON.stringify(tasks));
-        this.tasks = tasks;
-      }
+      let tasks = this.tasks.filter((task) => task.id !== id);
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+      this.tasks = tasks;
     },
     addTask(task) {
       let tasks = [];
